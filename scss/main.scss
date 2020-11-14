@@ -2,6 +2,7 @@
 @import 'about';
 @import 'contact';
 @import 'versions';
+@import 'legal';
 
 $blue: #1c648f;
 
@@ -70,12 +71,21 @@ h1 {
     padding: 10px;
 }
 
+h2 {
+    font-size: 2.2em;
+    padding: 10px;
+}
+
 h3 {
     font-size: 2em;
     margin-top: 10px;
     padding: 10px;
 }
 
+h4 {
+    font-size: 1.5em;
+    padding: 10px;
+}
 
 button {
     background: transparent;
@@ -347,19 +357,11 @@ footer {
         width: inherit !important;
         height: inherit !important;
 
-        // .container {
-        //     padding-top: 40px;
-        //     padding-bottom: 80px
-        // }
-
         footer {
             position: unset;
             margin-top: -40px;
         }
     }
-
-
-
 
     footer {
         font-size: 0.8em;
@@ -388,16 +390,9 @@ footer {
             display: flex;
         }
     }
-
-
-
 }
 
 @media only screen and (max-width: 480px) {
-    // textarea {
-    //     height: 50%;
-    // }
-
     select {
         font-size: 2em;
         width: 90%;

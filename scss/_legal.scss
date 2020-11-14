@@ -1,0 +1,52 @@
+body.legal {
+
+    width: inherit;
+    height: inherit;
+    overflow: scroll;
+
+    .container {
+        height: unset;
+
+        .inner-container {
+            align-items: self-end;
+            text-align: left;
+
+            ul {
+                list-style: square;
+                text-align: left;
+                padding: 10px;
+                margin-left: 15px;
+
+                li {
+                    line-height: 20px;
+                }
+            }
+
+            a {
+                color: #44a4ec;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    body.legal {
+
+        .container {
+            padding-top: 45px;
+            height: auto;
+            padding-bottom: 60px;
+
+            .inner-container {
+                height: auto;
+            }
+        }
+
+        footer {
+            position: unset;
+            margin-top: -40px;
+        }
+    }
+}
