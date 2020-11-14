@@ -68,7 +68,7 @@
         </div>
     </nav>
 
-    <div class="container" id="main">
+    <main class="container" id="main">
         <div class="inner-container">
             <select name="convention" id="convention" title="Click here to change convention"
                 onchange="changeConvention()">
@@ -90,7 +90,8 @@
                 Also accepts chords + lyrics (BETA)
             </p>
 
-            <textarea draggable="false" style="resize:none" rows="20" cols="100" id="output"></textarea>
+            <textarea draggable="false" style="resize:none" rows="20" cols="100" id="output"
+                aria-label="outputted notes"></textarea>
 
             <div class="btns">
                 <button class="lg" onclick="convert()">Convert</button>
@@ -98,7 +99,7 @@
             </div>
 
         </div>
-    </div>
+    </main>
 
     <footer>
         <ul>
