@@ -193,12 +193,8 @@ nav {
                 text-decoration: underline;
             }
         }
-
     }
-
-
 }
-
 
 footer {
     background: #ffffff0f;
@@ -334,7 +330,6 @@ footer {
     display: none;
 }
 
-
 @media only screen and (max-width: 1100px) {
 
     .container#main {
@@ -396,6 +391,10 @@ footer {
     select {
         font-size: 2em;
         width: 90%;
+    }
+
+    footer {
+        font-size: 0.6em;
     }
 }
 
