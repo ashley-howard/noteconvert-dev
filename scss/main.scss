@@ -353,7 +353,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     body.index {
-        overflow: scroll;
+        overflow: auto;
         width: inherit !important;
         height: inherit !important;
 
