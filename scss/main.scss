@@ -1,9 +1,9 @@
 @import 'reset';
 @import 'about';
 @import 'contact';
+@import 'versions';
 
 $blue: #1c648f;
-
 
 $primary-font: -apple-system,
 BlinkMacSystemFont,
@@ -127,7 +127,7 @@ nav {
 
     a:hover,
     a:active {
-        color: $blue;
+        color: $blue !important;
     }
 
     .brand {
@@ -342,8 +342,28 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    body.index {
+        overflow: scroll;
+        width: inherit !important;
+        height: inherit !important;
+
+        // .container {
+        //     padding-top: 40px;
+        //     padding-bottom: 80px
+        // }
+
+        footer {
+            position: unset;
+            margin-top: -40px;
+        }
+    }
+
+
+
+
     footer {
         font-size: 0.8em;
+
     }
 
     nav {
@@ -368,11 +388,25 @@ footer {
             display: flex;
         }
     }
+
+
+
 }
 
 @media only screen and (max-width: 480px) {
+    // textarea {
+    //     height: 50%;
+    // }
+
     select {
         font-size: 2em;
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container .inner-container #convention-desc {
+        font-size: 1em;
+        display: unset;
     }
 }
